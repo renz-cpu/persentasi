@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentasi: IPA dan Teknologi bagi Kehidupan Manusia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .slide {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 800px;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #3498db;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #2980b9;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    ul {
+      text-align: left;
+      margin-left: 20px;
+    }
+    .highlight {
+      background-color: #ecf0f1;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .source {
+      font-size: 0.9em;
+      color: #7f8c8d;
+      margin-top: 20px;
+    }
+    .source a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    .source a:hover {
+      text-decoration: underline;
+    }
+    .navigation {
+      margin-top: 30px;
+    }
+    .navigation button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 0 10px;
+    }
+    .navigation button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide" id="slide1">
+    <h1>IPA dan Teknologi bagi Kehidupan Manusia</h1>
+    <p>Materi Presentasi Bab VIII</p>
+    <div class="navigation">
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide2" style="display: none;">
+    <h2>ANGGOTA KELOMPOK</h2>
+    <ul>
+      <li>1. Rendy Septiadi</li>
+      <li>2. Mawardi</li>
+      <li>3. Bagas M. Ridho</li>
+    </ul>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+  <div class="slide" id="slide3" style="display: none;">
+    <h2>1. IPA sebagai Dasar Pengembangan Teknologi</h2>
+    <p>IPA mempelajari fenomena alam untuk memahami prinsip-prinsip alam semesta. Pengetahuan ini menjadi dasar pengembangan teknologi.</p>
+    <h3>Contoh Aplikasi</h3>
+    <ul>
+      <li>Hukum gerak Newton → Kendaraan dan mesin.</li>
+      <li>Listrik dan magnet → Generator dan perangkat elektronik.</li>
+    </ul>
+    <div class="source">
+      <strong>Sumber:</strong> Halliday, D., Resnick, R., & Walker, J. (2014). <em>Fundamentals of Physics</em>.
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide4" style="display: none;">
+    <h2>2. Manfaat IPA dan Teknologi</h2>
+    <ul>
+      <li><span class="highlight">Kesehatan:</span> Vaksin, alat diagnosis, dan obat-obatan.</li>
+      <li><span class="highlight">Komunikasi:</span> Internet dan teknologi informasi.</li>
+      <li><span class="highlight">Energi:</span> Panel surya dan turbin angin.</li>
+    </ul>
+    <div class="source">
+      <strong>Sumber:</strong> WHO (2020). <em>The Impact of Medical Technology on Healthcare</em>.
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide5" style="display: none;">
+    <h2>3. Dampak Negatif IPA dan Teknologi</h2>
+    <ul>
+      <li><span class="highlight">Lingkungan:</span> Polusi dan kerusakan ekosistem.</li>
+      <li><span class="highlight">Sosial:</span> Kesenjangan digital dan ketergantungan.</li>
+      <li><span class="highlight">Etika:</span> Rekayasa genetika dan AI.</li>
+    </ul>
+    <div class="source">
+      <strong>Sumber:</strong> UNEP (2019). <em>Global Environment Outlook</em>.
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide6" style="display: none;">
+    <h2>4. IPA dan Teknologi Masa Depan</h2>
+    <ul>
+      <li><span class="highlight">Kecerdasan Buatan (AI):</span> Otomatisasi dan analisis data.</li>
+      <li><span class="highlight">Bioteknologi:</span> Rekayasa genetika dan terapi gen.</li>
+      <li><span class="highlight">Energi Terbarukan:</span> Fusi nuklir dan penyimpanan energi.</li>
+    </ul>
+    <div class="source">
+      <strong>Sumber:</strong> Russell, S., & Norvig, P. (2021). <em>Artificial Intelligence: A Modern Approach</em>.
+    </div>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+      <button onclick="nextSlide()">Lanjut</button>
+    </div>
+  </div>
+
+  <div class="slide" id="slide7" style="display: none;">
+    <h2>Kesimpulan</h2>
+    <p>IPA dan teknologi memiliki peran penting dalam memajukan kehidupan manusia. Namun, perlu kesadaran akan dampak negatifnya untuk memastikan perkembangan yang berkelanjutan dan bertanggung jawab.</p>
+    <div class="navigation">
+      <button onclick="prevSlide()">Kembali</button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 1;
+
+    function showSlide(slideNumber) {
+      document.querySelectorAll('.slide').forEach(slide => {
+        slide.style.display = 'none';
+      });
+      document.getElementById(`slide${slideNumber}`).style.display = 'block';
+    }
+
+    function nextSlide() {
+      if (currentSlide < 6) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        showSlide(currentSlide);
+      }
+    }
+
+    // Tampilkan slide pertama saat halaman dimuat
+    showSlide(1);
+  </script>
+</body>
+</html>
